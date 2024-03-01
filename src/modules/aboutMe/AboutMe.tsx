@@ -3,19 +3,19 @@ import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 
 import { NavBar } from '../navBar/NavBar';
-
 import jeremySrc from './jeremy.jpg'
 
 export const AboutMe = () => {
     return (
         <>
             <NavBar />
+            <Divider />
 
-            <Paper elevation={10} className='petsPost' style={{ textAlign: 'center', backgroundColor: 'lightblue'}}>
+            <Paper elevation={24} className='petsPost' >
                 <div style={{ display: 'flex', flexDirection: 'column'}}>
                     <span style={{ flex: '1'}}>
-                        <Typography variant="h3" gutterBottom>
-                            About Me Page
+                        <Typography variant="h4" gutterBottom style={{ fontWeight: 'bold'}} >
+                            Jeremy Zahrndt
                         </Typography>
                     </span>
                 </div>

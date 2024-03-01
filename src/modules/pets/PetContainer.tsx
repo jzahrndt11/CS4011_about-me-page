@@ -1,3 +1,4 @@
+import Divider from '@mui/material/Divider';
 import { Pets, PetsProps } from "./Pets";
 import { NavBar } from '../navBar/NavBar';
 
@@ -29,6 +30,8 @@ export const PetsContainer = () => {
     return (
         <>
             <NavBar />
+            <Divider />
+
             {
                 petList.map((pet, index) => <Pets key={index} {...pet} />)
             }

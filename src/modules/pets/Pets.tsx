@@ -13,26 +13,26 @@ export interface PetsProps {
 export const Pets = ({ title, description, imgScr }: PetsProps) => {
     return (
         <>
-            <Paper elevation={10} className='petsPost' style={{ textAlign: 'center', backgroundColor: 'lightblue'}}>
+            <Paper elevation={24} className='petsPost' >
                 {/* Title */}
                 <div style={{ display: 'flex', flexDirection: 'column'}}>
                     <span style={{ flex: '1'}}>
-                        <Typography variant="h3" gutterBottom>
+                        <Typography variant="h4" gutterBottom style={{ fontWeight: 'bold' }}>
                             {title}
                         </Typography>
                     </span>
                 </div>
-                
+
                 <Divider />
                 
                 <div style={{ display: 'flex', flexDirection: 'column', padding: '10px'}}>
                     {/* Image */}
                     <span>
-                        <img src={imgScr} alt='Pet' style={{ maxWidth: '100%' }}/>
+                        <img src={imgScr} alt='Pet' style={{ maxWidth: '85%' }}/>
                     </span>
                     
                     {/* Disciption */}
-                    <Typography variant="body1" gutterBottom>
+                    <Typography variant="subtitle1" gutterBottom>
                         {description}
                     </Typography>
                 </div>

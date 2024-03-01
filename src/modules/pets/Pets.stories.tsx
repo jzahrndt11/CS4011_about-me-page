@@ -25,7 +25,7 @@ type Story = StoryObj<typeof meta>;
 export const Primary: Story = {
   args: {
     title: 'Pet Name',
-    imgScr: './imgSrc',
+    imgScr: 'https://media.istockphoto.com/id/806942944/photo/german-shepherd-dog.jpg?s=612x612&w=is&k=20&c=fovC4eXq2hPVujuNozKpgUPip1HNliwPCqtXrZuSp8c=',
     description: 'Breed (Lifetime)'
   },
 };

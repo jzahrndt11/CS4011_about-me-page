@@ -4,8 +4,6 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import { useNavigate, useLocation} from 'react-router'
 
-
-
 export const NavBar = () => {
     const navigate = useNavigate()
     const location = useLocation()
@@ -26,7 +24,7 @@ export const NavBar = () => {
 
     return (
         <Box sx={{ width: '100%' }}>
-            <Tabs
+            <Tabs centered style={{}}
                 value={value}
                 onChange={handleChange}
                 aria-label="nav tabs example"

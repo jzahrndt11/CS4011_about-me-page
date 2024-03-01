@@ -1,6 +1,8 @@
 .petsPost {
-    margin-top: 10px;
+    margin: auto;
+    margin-top: 30px;
     margin-bottom: 10px;
-    width: 600px;
+    width: 85%;
     padding: 7px;
+    text-align: center;
 }
