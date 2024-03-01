@@ -2,14 +2,14 @@ import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 
-import NavTabs from '../navBar/NavBar';
+import { NavBar } from '../navBar/NavBar';
 
 import jeremySrc from './jeremy.jpg'
 
 export const AboutMe = () => {
     return (
         <>
-            <NavTabs />
+            <NavBar />
 
             <Paper elevation={10} className='petsPost' style={{ textAlign: 'center', backgroundColor: 'lightblue'}}>
                 <div style={{ display: 'flex', flexDirection: 'column'}}>

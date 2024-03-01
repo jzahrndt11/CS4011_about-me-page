@@ -1,5 +1,5 @@
 import { Pets, PetsProps } from "./Pets";
-import NavTabs from '../navBar/NavBar';
+import { NavBar } from '../navBar/NavBar';
 
 import bearSrc from './bear.JPG'
 import shastaSrc from './shasta.JPG'
@@ -8,7 +8,7 @@ import marleySrc from './marley.jpg'
 
 export const PetsContainer = () => {
 
-    const pets: PetsProps[] = [
+    const petList: PetsProps[] = [
         {
             title: 'Bear',
             description: 'German Shepard (8/8/20 - Present)',
@@ -28,10 +28,9 @@ export const PetsContainer = () => {
 
     return (
         <>
-            <NavTabs />
-
+            <NavBar />
             {
-                pets.map((pet, index) => <Pets key={index} {...pet} />)
+                petList.map((pet, index) => <Pets key={index} {...pet} />)
             }
         </>
     )

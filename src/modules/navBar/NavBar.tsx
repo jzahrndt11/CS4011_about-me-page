@@ -6,18 +6,18 @@ import { useNavigate, useLocation} from 'react-router'
 
 
 
-export default function NavTabs() {
+export const NavBar = () => {
     const navigate = useNavigate()
     const location = useLocation()
     const [value, setValue] = React.useState(0);
 
-    const paths = ['/', '/pets'];
+    const paths = React.useMemo(() => ['/', '/pets'], []);
 
     React.useEffect(() => {
         const currentPath = location.pathname;
         const currentIndex = paths.findIndex(path => path === currentPath);
         setValue(currentIndex >= 0 ? currentIndex : 0);
-    }, [location.pathname]);
+    }, [location.pathname, paths]);
 
     const handleChange = (event: React.SyntheticEvent, newValue: number) => {
         setValue(newValue);
